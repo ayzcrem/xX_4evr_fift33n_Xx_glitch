@@ -28,8 +28,9 @@ app.use(express.static(publicURL));
 
 // Set your static html file
 app.get("/", (req, res) => {
-  res.sendFile( path.resolve(__dirname + "xx4everfift33nxx.html"))
+  res.sendFile( path.resolve(__dirname + "/views/index.html"))
 });
+
 
 // ---- ADD YOUR API ENDPOINTS HERE ----
 // GET: "api/v1/todos"
