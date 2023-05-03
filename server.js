@@ -3,27 +3,6 @@ const response = require('express')
 
 var app = express()
 
-const { MongoClient } = require('mongodb');
-
-async function main() {
-
-  const uri = "mongodb+srv://xangelajuarez:testtesttest@test1.l2sz801.mongodb.net/?retryWrites=true&w=majority";
-
-  const client = new MongoClient(uri);
-
-  try {
-  await client.connect();
-  } catch (e) {
-    console.error(e);
-  } finally {
-    await client.close();
-  }
-
-
-}
-
-main().catch(console.error);
-
 // express api info
 app.use(express.static('public'))
 
